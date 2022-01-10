@@ -1,0 +1,67 @@
+<div class="row">
+  <div class="col-lg-4 offset-lg-4">
+    <h2 class="titulo">IMC CALCULATOR </h2>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="fondoitem">
+          <div class="contenedor selectSex" (click)="masculino()" [ngClass]="{'selectActive': sexo === 'Masculino'}">
+            <i class="fas fa-mars sexo"></i>
+            <p>Masculino</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="fondoitem ">
+          <div class="contenedor selectSex" (click)="femenino()" [ngClass]="{'selectActive': sexo === 'Femenino'}">
+            <i class="fas fa-venus sexo"></i>
+            <p>Femenino</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="fondoitem">
+          <div class="contenedor">
+            <p>Altura</p>
+            <div class="estiloAltura">{{altura}} <span class="estiloCm">cm</span></div>
+            <input type="range" [value]="altura" min="120" max="230" class="form-range" (input)="cambiarAltura($event)" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="fondoitem">
+          <div class="contenedor">
+            <p>Peso</p>
+            <div class="estiloAltura">{{peso}} <span class="estiloCm">lb</span></div>
+            <div>
+              <i class="fas fa-minus sumaresta" (click)="peso = peso -1" ></i>
+              <i class="fas fa-plus sumaresta" (click)="peso = peso +1"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="fondoitem">
+          <div class="contenedor">
+            <p>Edad</p>
+            <div class="estiloAltura">{{edad}}</div>
+            <div>
+              <i class="fas fa-minus sumaresta" (click)="edad = edad - 1"></i>
+              <i class="fas fa-plus sumaresta" (click)="edad = edad + 1 "></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <button class="btn btn-primary btn-lg btn-color" (click)="calcularImc()">
+          CALCULAR
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

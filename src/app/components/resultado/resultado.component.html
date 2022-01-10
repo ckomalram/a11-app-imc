@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-lg-4 offset-lg-4">
+    <h2 class="titulo">RESULTADO</h2>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="fondoitem">
+          <div class="contenedor">
+            <p class="resultado" [ngClass]="{'peligro': peligro === 1}">{{resultado}}</p>
+            <p class="estiloNumero">{{bmi}}</p>
+            <p class="interpretacion" >{{interpretacion}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <button class="btn btn-primary btn-lg btn-color" [routerLink]="['/']">
+          RE-CALCULAR
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

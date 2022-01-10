@@ -1,0 +1,50 @@
+.fondoitem{
+  background-color: #6e2b2cea;
+  height: 130px;
+  border-radius: 20px;
+  color: white;
+
+}
+
+.sexo{
+  font-size: 40px;
+}
+
+
+.estiloAltura{
+  font-size: 32px;
+  font-weight: 800;
+  margin-top: -30px;
+}
+
+.estiloCm{
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: -8px;
+}
+
+.form-range{
+  padding: 0px 20px ;
+}
+
+input[type=range]::-webkit-slider-thumb{
+  background: #ff3366ad;
+}
+
+
+.sumaresta{
+  cursor: pointer;
+  background-color: #ff4c4f5e;
+  padding: 7px;
+  border-radius: 15px;
+  margin-left: 3px;
+}
+
+.selectSex{
+  cursor: pointer;
+}
+
+.selectActive{
+  background-color: #c50f0ff6;
+  border-radius: 20px;
+}
